@@ -15,21 +15,21 @@ GREP_LINE_PATTERN = re.compile(r"^[^\w/]*([^:]+):(\d+):", re.VERBOSE)
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "-A",
+        "-a",
         "--after",
         type=int,
         metavar="NUM",
         help="Collect NUM lines after match, overrides --context",
     )
     parser.add_argument(
-        "-B",
+        "-b",
         "--before",
         type=int,
         metavar="NUM",
         help="Collect NUM lines before match, overrides --context",
     )
     parser.add_argument(
-        "-C",
+        "-c",
         "--context",
         type=int,
         metavar="NUM",

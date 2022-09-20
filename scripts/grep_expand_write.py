@@ -46,6 +46,7 @@ def parse_args():
     parser = argparse.ArgumentParser()
 
     parser.add_argument(
+        "-n",
         "--dry-run",
         action="store_true",
     )
