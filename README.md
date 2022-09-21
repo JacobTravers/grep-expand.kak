@@ -30,7 +30,7 @@ Use `grep` command to find points of interest across multiple files.
 You can edit `*grep*` buffer to add or remove lines of interest.
 
 **Tip**: if you just need make changes in those lines, use
-[kakoune-grep-write](https://github.com/JacobTravers/kakoune-grep-write).
+[grep-write.kak](https://github.com/JacobTravers/grep-write.kak).
 
 **Tip**: if your compiler, linter or language server emits lines like
 `<path>:<line>:`, its output can also be used to collect lines to change.
@@ -113,9 +113,9 @@ to it.
 As with any action that modifies multiple files directly on disk, be sure to
 check in any existing changes to source control before starting.
 
-## Comparison with kakoune-grep-write
+## Comparison with grep-write.kak
 
-`kakoune-grep-write` is great for making changes directly in lines found by `grep`,
+`grep-write.kak` is great for making changes directly in lines found by `grep`,
 e.g. for renaming something. Prefer using it in those cases, as it involves
 fewer steps.
 
