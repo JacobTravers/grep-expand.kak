@@ -2,6 +2,15 @@
 
 Kakoune plugin to make changes across multiple files in a single buffer.
 
+Thank you to [natasky](https://github.com/natasky) for creating the
+original
+[kakoune-multi-file](https://github.com/natasky/kakoune-multi-file),
+this repo is just a slight change in functionality and rename for better
+semantics, to match
+[grep-buffers.kak](https://github.com/jtrv/grep-buffers.kak),
+and [grep-write.kak](https://github.com/jtrv/grep-buffers.kak)
+(which are also stolen from [occivink](https://github.com/occivink)).
+
 ![demo](./demo.gif)
 
 ## Setup
@@ -10,16 +19,13 @@ Requirements:
 
 - Python 3.6 or newer.
 
+Using `cork.kak` (recommended):
+
+    cork  grep-expand https://github.com/jtrv/grep-expand.kak
+
 Using `plug.kak`:
 
-```
-plug "JacobTravers/grep-expand.kak"
-```
-Using `cork.kak`:
-
-```
-cork  grep-expand https://github.com/JacobTravers/grep-expand.kak
-```
+    plug "jtrv/grep-expand.kak"
 
 ## Workflow
 
@@ -30,7 +36,7 @@ Use `grep` command to find points of interest across multiple files.
 You can edit `*grep*` buffer to add or remove lines of interest.
 
 **Tip**: if you just need make changes in those lines, use
-[grep-write.kak](https://github.com/JacobTravers/grep-write.kak).
+[grep-write.kak](https://github.com/jtrv/grep-write.kak).
 
 **Tip**: if your compiler, linter or language server emits lines like
 `<path>:<line>:`, its output can also be used to collect lines to change.
